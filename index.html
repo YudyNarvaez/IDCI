@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semillero IDCI - Investigación y Desarrollo de Componentes Informáticos</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Configuración de tema y lógica interactiva -->
+  <script src="js/app.js"></script>
+  <!-- Alpine.js for interactive components -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-brand-teal selection:text-white">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo Oficial -->
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="Logo Semillero.png" alt="Logo Semillero IDCI" class="h-12 w-auto object-contain transition-transform group-hover:scale-105">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-gray-600">
+        <a href="#inicio" class="hover:text-brand-dark transition-colors">Inicio</a>
+        <a href="#linea" class="hover:text-brand-dark transition-colors">Línea de Investigación</a>
+        <a href="#integrantes" class="hover:text-brand-dark transition-colors">Semilleristas</a>
+        <a href="#lider" class="hover:text-brand-dark transition-colors">Dirección</a>
+        <a href="#contacto" class="hover:text-brand-dark transition-colors">Vinculación</a>
+      </nav>
+
+      <!-- CTA Nav -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#contacto" class="bg-brand-dark hover:bg-emerald-950 text-white px-5 py-2.5 rounded-xl font-medium text-sm transition-all shadow-md shadow-brand-dark/10 hover:shadow-lg">
+          Unirse al Semillero
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-b from-emerald-50/50 via-white to-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Text Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-100/80 text-brand-dark text-xs font-semibold tracking-wide uppercase">
+            <span class="w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>
+            Semillero de Investigación IDCI
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight">
+            Investigación y Desarrollo de <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-dark to-brand-teal">Componentes Informáticos</span>
+          </h1>
+
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Espacio académico y científico enfocado en el diseño, implementación y optimización de soluciones de software, inteligencia artificial y ciberseguridad, transformando el conocimiento tecnológico en impacto social.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#integrantes" class="w-full sm:w-auto bg-brand-dark hover:bg-emerald-950 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-brand-dark/20 transition-all text-center">
+              Conoce a los Semilleristas
+            </a>
+            <a href="#linea" class="w-full sm:w-auto bg-white hover:bg-gray-50 text-gray-700 font-semibold px-7 py-3.5 rounded-xl border border-gray-200 transition-all text-center">
+              Líneas de Investigación
+            </a>
+          </div>
+
+          <!-- Quick Metrics -->
+          <div class="pt-8 grid grid-cols-3 gap-6 border-t border-gray-200/80 max-w-md mx-auto lg:mx-0">
+            <div>
+              <p class="text-3xl font-extrabold text-brand-dark">15</p>
+              <p class="text-xs text-gray-500 font-medium mt-1">Semilleristas Activos</p>
+            </div>
+            <div>
+              <p class="text-3xl font-extrabold text-brand-dark">4+</p>
+              <p class="text-xs text-gray-500 font-medium mt-1">Áreas de Enfoque</p>
+            </div>
+            <div>
+              <p class="text-3xl font-extrabold text-brand-dark">100%</p>
+              <p class="text-xs text-gray-500 font-medium mt-1">Compromiso Social</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Hero Showcase -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="relative w-full max-w-md p-8 bg-white rounded-3xl shadow-2xl border border-emerald-100 text-center space-y-6">
+            <div class="p-4 bg-emerald-50 rounded-2xl inline-block">
+              <img src="Logo Semillero.png" alt="IDCI Logo" class="h-32 w-auto mx-auto object-contain">
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-xl text-gray-900">Ingeniería de Sistemas y Computación</h3>
+              <p class="text-sm text-gray-500">Unidad de Investigación & Innovación Tecnológica</p>
+            </div>
+            <div class="p-4 bg-gray-900 text-emerald-400 font-mono text-xs rounded-xl text-left space-y-1 shadow-inner">
+              <p><span class="text-gray-500">&gt;</span> IDCI.init()</p>
+              <p><span class="text-emerald-500">✓</span> AI_Modules: READY</p>
+              <p><span class="text-emerald-500">✓</span> Cybersecurity_Core: ACTIVE</p>
+              <p><span class="text-emerald-500">✓</span> GameDev_Engine: LOADED</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LÍNEA DE INVESTIGACIÓN -->
+  <section id="linea" class="py-20 bg-white border-y border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <h2 class="text-xs font-bold text-brand-teal uppercase tracking-widest">Enfoque Institucional</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Línea de Investigación</h3>
+        <p class="text-gray-600 text-lg">
+          Nuestros proyectos se enmarcan formalmente en la línea institucional de desarrollo tecnológico y formación científica.
+        </p>
+      </div>
+
+      <!-- Main Banner Card -->
+      <div class="bg-gradient-to-r from-brand-dark to-brand-teal rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden mb-12">
+        <div class="relative z-10 max-w-3xl space-y-4">
+          <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold uppercase tracking-wider">Línea Principal</span>
+          <h4 class="text-2xl sm:text-3xl font-bold leading-snug">
+            Aprendizaje, conocimiento, tecnologías, comunicación y digitalización
+          </h4>
+          <p class="text-emerald-100 text-base leading-relaxed">
+            Abordamos el ciclo completo del desarrollo del conocimiento tecnológico, desde la investigación en modelos computacionales avanzados hasta la creación de componentes informáticos aplicables a la solución de problemáticas reales.
+          </p>
+        </div>
+      </div>
+
+      <!-- Sub-Ejes -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-brand-dark flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <h5 class="font-bold text-lg text-gray-900 mb-2">Inteligencia Artificial</h5>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Procesamiento de lenguaje natural, modelos predictivos y aprendizaje automático para análisis de datos complejas.
+          </p>
+        </div>
+
+        <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-teal-100 text-brand-teal flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h5 class="font-bold text-lg text-gray-900 mb-2">Ciberseguridad</h5>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Protección de componentes informáticos, análisis de vulnerabilidades e infraestructura segura.
+          </p>
+        </div>
+
+        <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-brand-dark flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h5 class="font-bold text-lg text-gray-900 mb-2">Desarrollo de Software</h5>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Arquitecturas de software modernas, diseño de componentes modulares y sistemas distribuidos.
+          </p>
+        </div>
+
+        <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-teal-100 text-brand-teal flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-gamepad"></i>
+          </div>
+          <h5 class="font-bold text-lg text-gray-900 mb-2">Diseño de Videojuegos</h5>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Entornos virtuales educativos, desarrollo 2D/3D e interacción social universitaria mediante entornos gamificados.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CARRUSEL DE SEMILLERISTAS (15 INTEGRANTES) -->
+  <section id="integrantes" class="py-20 bg-gray-50 overflow-hidden" x-data="carouselApp()">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div class="space-y-2">
+          <h2 class="text-xs font-bold text-brand-teal uppercase tracking-widest">Talento Universitario</h2>
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Integrantes Semilleristas</h3>
+          <p class="text-gray-600">Estudiantes de Ingeniería de Sistemas y Computación vinculados al semillero.</p>
+        </div>
+
+        <!-- Controles de Navegación del Carrusel -->
+        <div class="flex items-center gap-3 mt-6 md:mt-0">
+          <button @click="prev()" class="w-12 h-12 rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-brand-dark hover:text-white hover:border-brand-dark transition-all flex items-center justify-center shadow-sm">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button @click="next()" class="w-12 h-12 rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-brand-dark hover:text-white hover:border-brand-dark transition-all flex items-center justify-center shadow-sm">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Carousel Track -->
+      <div class="relative overflow-hidden">
+        <div class="flex transition-transform duration-500 ease-out gap-6"
+             :style="'transform: translateX(-' + (currentIndex * (100 / itemsPerPage)) + '%)'">
+          
+          <template x-for="(student, index) in students" :key="index">
+            <div class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0">
+              <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-4 mb-4">
+                    <div class="w-14 h-14 rounded-full bg-gradient-to-tr from-brand-dark to-brand-teal text-white font-bold text-lg flex items-center justify-center shadow-md">
+                      <span x-text="getInitials(student.name)"></span>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-gray-900 text-base leading-snug" x-text="student.name"></h4>
+                      <span class="inline-block mt-1 px-2.5 py-0.5 bg-emerald-50 text-brand-dark text-xs font-semibold rounded-full" x-text="student.semester + ' Semestre'"></span>
+                    </div>
+                  </div>
+
+                  <div class="pt-4 border-t border-gray-100">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Proyecto Asignado</p>
+                    <p class="text-sm font-medium text-gray-700 leading-relaxed" x-text="student.project"></p>
+                  </div>
+                </div>
+
+                <div class="mt-6 pt-3 flex items-center justify-between text-xs text-gray-400">
+                  <span>Ingeniería de Sistemas</span>
+                  <i class="fa-solid fa-laptop-code text-brand-teal"></i>
+                </div>
+              </div>
+            </div>
+          </template>
+
+        </div>
+      </div>
+
+      <!-- Indicadores -->
+      <div class="flex justify-center items-center gap-2 mt-8">
+        <template x-for="page in totalPages" :key="page">
+          <button @click="goToPage(page - 1)" 
+                  class="h-2.5 rounded-full transition-all"
+                  :class="currentIndex === (page - 1) * itemsPerPage ? 'w-8 bg-brand-dark' : 'w-2.5 bg-gray-300'">
+          </button>
+        </template>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LÍDER DEL SEMILLERO -->
+  <section id="lider" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-gradient-to-br from-gray-900 via-emerald-950 to-brand-dark rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Photo / Badge -->
+          <div class="lg:col-span-4 flex justify-center">
+            <div class="relative">
+              <div class="w-56 h-56 sm:w-64 sm:h-64 rounded-3xl bg-gradient-to-tr from-brand-teal to-emerald-400 p-1.5 shadow-2xl">
+                <div class="w-full h-full bg-gray-900 rounded-[22px] flex flex-col items-center justify-center p-6 text-center space-y-3">
+                  <div class="w-20 h-20 rounded-full bg-brand-dark/80 text-emerald-300 flex items-center justify-center text-3xl font-bold border border-emerald-500/30">
+                    YN
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg text-white">Yudy Narváez</h4>
+                    <p class="text-xs text-emerald-400">Investigadora Líder IDCI</p>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute -bottom-4 -right-4 bg-brand-teal text-white p-3 rounded-2xl shadow-lg flex items-center gap-2 text-xs font-bold">
+                <i class="fa-solid fa-award text-base"></i> Docente Programa Ingeniería de Sistemas y Computación
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio & Credentials -->
+          <div class="lg:col-span-8 space-y-6">
+            <div>
+              <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Dirección del Semillero</span>
+              <h3 class="text-3xl font-extrabold text-white mt-1">Investigadora Yudy Narváez</h3>
+              <p class="text-emerald-200 text-sm mt-1">Líder del Semillero IDCI & Docente Investigadora</p>
+            </div>
+
+            <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
+              Profesional en Ingeniería de Sistemas egresada de la Universidad de Nariño, Magíster en Inteligencia Artificial, Especialista en Seguridad Informática y Especialista en Diseño de Videojuegos. Cuenta con una amplia trayectoria liderando proyectos de investigación e interacción social universitaria, promoviendo el desarrollo de competencias tecnológicas avanzadas en el ámbito académico.
+            </p>
+
+            <!-- Specialty Badges -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/10">
+                <div class="text-emerald-400 text-sm font-semibold mb-1"><i class="fa-solid fa-graduation-cap mr-2"></i>Formación Académica</div>
+                <p class="text-xs text-gray-300">Magíster en IA • Esp. Seguridad Informática • Esp. Videojuegos • Ing. de Sistemas (U. Nariño)</p>
+              </div>
+
+              <div class="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/10">
+                <div class="text-emerald-400 text-sm font-semibold mb-1"><i class="fa-solid fa-microscope mr-2"></i>Líneas de Dominio</div>
+                <p class="text-xs text-gray-300">Inteligencia Artificial, Ciberseguridad, Desarrollo de Software & Proyectos de Interacción Social</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO / VINCULACIÓN -->
+  <section id="contacto" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-white rounded-3xl p-8 sm:p-12 border border-gray-100 shadow-xl space-y-8">
+        <div class="text-center space-y-2">
+          <h2 class="text-xs font-bold text-brand-teal uppercase tracking-widest">Convocatoria & Postulación</h2>
+          <h3 class="text-3xl font-extrabold text-gray-900">¿Quieres unirte al Semillero IDCI?</h3>
+          <p class="text-gray-600 text-sm">Si eres estudiante del programa de Ingeniería de Sistemas y Computación, déjanos tus datos para el próximo ciclo de vinculación.</p>
+        </div>
+
+        <form class="space-y-6" onsubmit="event.preventDefault(); alert('Gracias por tu interés en el Semillero IDCI. Nos pondremos en contacto contigo.');">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase mb-2">Nombre Completo</label>
+              <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-dark focus:ring-2 focus:ring-brand-dark/20 outline-none transition-all text-sm" placeholder="Tu nombre completo">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase mb-2">Correo Institucional</label>
+              <input type="email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-dark focus:ring-2 focus:ring-brand-dark/20 outline-none transition-all text-sm" placeholder="usuario@ucundinamarca.edu.co">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase mb-2">Semestre Actual</label>
+              <select required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-dark focus:ring-2 focus:ring-brand-dark/20 outline-none transition-all text-sm bg-white">
+                <option value="">Selecciona tu semestre</option>
+                <option value="1">1° a 3° Semestre</option>
+                <option value="4">4° a 6° Semestre</option>
+                <option value="7">7° a 10° Semestre</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase mb-2">Área de Interés Principal</label>
+              <select required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-dark focus:ring-2 focus:ring-brand-dark/20 outline-none transition-all text-sm bg-white">
+                <option value="">Selecciona un área</option>
+                <option value="ia">Inteligencia Artificial & PLN</option>
+                <option value="ciberseguridad">Ciberseguridad & Redes</option>
+                <option value="software">Desarrollo de Software</option>
+                <option value="videojuegos">Diseño de Videojuegos</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-gray-700 uppercase mb-2">Motivación para ingresar</label>
+            <textarea rows="3" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-dark focus:ring-2 focus:ring-brand-dark/20 outline-none transition-all text-sm" placeholder="Cuéntanos brevemente qué proyectos o temas te gustaría desarrollar..."></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-brand-dark hover:bg-emerald-950 text-white font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-brand-dark/20">
+            Enviar Solicitud de Vinculación
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white pt-16 pb-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-gray-800">
+        
+        <div class="md:col-span-6 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="Logo Semillero.png" alt="IDCI Logo" class="h-10 w-auto bg-white p-1 rounded-lg">
+            <span class="font-bold text-lg text-white">Semillero IDCI</span>
+          </div>
+          <p class="text-xs text-gray-400 max-w-sm leading-relaxed">
+            Investigación y Desarrollo de Componentes Informáticos. Programa de Ingeniería de Sistemas y Computación.
+          </p>
+        </div>
+
+        <div class="md:col-span-6 space-y-4 text-left md:text-right">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-emerald-400">Redes Sociales Oficiales</h4>
+          <p class="text-xs text-gray-400">Únete para interactuar y enterarte de los mejores eventos académicos y científicos:</p>
+          
+          <div class="flex items-center justify-start md:justify-end gap-4 pt-2">
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-brand-teal text-gray-300 hover:text-white transition-all flex items-center justify-center text-lg" title="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-brand-dark text-gray-300 hover:text-white transition-all flex items-center justify-center text-lg" title="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-black text-gray-300 hover:text-white transition-all flex items-center justify-center text-lg" title="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+        <p>© 2026 Semillero de Investigación IDCI. Todos los derechos reservados.</p>
+        <p>Líder de Investigación: Yudy Narváez</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
