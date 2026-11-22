@@ -374,7 +374,9 @@
             <textarea rows="3" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-dark focus:ring-2 focus:ring-brand-dark/20 outline-none transition-all text-sm" placeholder="Cuéntanos brevemente qué proyectos o temas te gustaría desarrollar..."></textarea>
           </div>
 
-          <button type="submit" class="w-full bg-brand-dark hover:bg-emerald-950 text-white font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-brand-dark/20">
+          <button type="button"
+            onclick="const f = this.form; const nombre = f.querySelector('input[type=text]').value; const correo = f.querySelector('input[type=email]').value; const selects = f.querySelectorAll('select'); const semestre = selects[0].options[selects[0].selectedIndex].text; const area = selects[1].options[selects[1].selectedIndex].text; const motivacion = f.querySelector('textarea').value; const cuerpo = `Nombre: ${nombre}%0ACorreo: ${correo}%0ASemestre: ${semestre}%0AÁrea de interés: ${area}%0AMotivación: ${motivacion}`; window.location.href = `mailto:yudynarvaez0427@gmail.com?subject=${encodeURIComponent('Solicitud de Vinculación - Semillero IDCI')}&body=${cuerpo}`;"
+            class="w-full bg-brand-dark hover:bg-emerald-950 text-white font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-brand-dark/20">
             Enviar Solicitud de Vinculación
           </button>
         </form>
